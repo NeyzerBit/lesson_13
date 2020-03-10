@@ -14,4 +14,4 @@ gulp.task('browser-sync', function() {
       }
   });
   gulp.watch("src/*").on('change', browserSync.reload);
-}); 
+});
