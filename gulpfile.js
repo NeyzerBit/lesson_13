@@ -11,14 +11,14 @@ function bs() {
           baseDir: "src/"
       }
   });
-  watch("./src/*.html").on('change', browserSync.reload);
-  watch("./sass/**/*.sass", serveSass);
+  watch("src/*.html").on('change', browserSync.reload);
+  watch("src/sass/*.sass", serveSass);
   watch("./js/*.js").on('change', browserSync.reload);
 };
 
 // Compile sass into CSS & auto-inject into browsers
 function serveSass() {
-  return src("./sass/*.sass")
+  return src("src/sass/*.sass")
       .pipe(sass())
       .pipe(dest("./css"))
       .pipe(browserSync.stream());
