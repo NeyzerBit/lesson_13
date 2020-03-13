@@ -12,7 +12,7 @@ function bs() {
       }
   });
   watch("src/*.html").on('change', browserSync.reload);
-  watch("src/sass/*.sass", serveSass);
+  watch("src/sass/**/*.sass", serveSass);
   watch("./js/*.js").on('change', browserSync.reload);
 };
 
