@@ -2,13 +2,12 @@ const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 
-
 // Static server
 function bs() {
   serveSass();
   browserSync.init({
-      server: {
-          baseDir: "src/"
+      server: { 
+          baseDir: "src"
       }
   });
   watch("src/*.html").on('change', browserSync.reload);
