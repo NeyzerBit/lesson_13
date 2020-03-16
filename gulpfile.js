@@ -19,7 +19,7 @@ function bs() {
 
 // Compile sass into CSS & auto-inject into browsers
 function serveSass() {
-  return src("src/sass/**/*.sass", "src/sass/**/*.scss")
+  return src("src/sass/**/*.sass", "src/scss/**/*.scss")
       .pipe(sass())
       .pipe(autoprefixer({
         cascade: false
