@@ -368,10 +368,10 @@ template {
 
 .hero {
   position: relative;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat;
   center: /cover;
   height: 100vh;
@@ -392,11 +392,11 @@ template {
     .hero__instagram__scroll-down {
       posiion: absolute;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       left: 0;
       bottom: 0;
-      min-width: 247px;
+      max-width: 247px;
       min-height: 97px;
       background-color: #131313;
       text-transform: uppercase;

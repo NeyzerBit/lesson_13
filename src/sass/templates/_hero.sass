@@ -1,9 +1,9 @@
 .hero
   position: relative
+  padding-top: 100px
   display: flex
   flex-direction: column
   justify-content: center
-  padding-top: 100px
   background: $dark url('../img/hero-bg.jpg') no-repeat
   center: / cover
   height: 100vh 
@@ -24,16 +24,17 @@
     &__scroll-down
       posiion: absolute
       display: flex
-      justify-content: center
       align-items: center
+      justify-content: center
       left: 0
       bottom: 0
-      min-width: 247px
+      max-width: 247px
       min-height: 97px
-      background-color: $dark 
+      background-color: $dark
       text-transform: uppercase
       text-decoration: none
       color: $light
+
 .instagram
   display: flex
   justify-content: center
