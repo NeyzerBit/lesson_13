@@ -1,31 +1,27 @@
 const {src, dest, watch} = require('gulp');
-const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+sass = require ('gulp-sass'),
+autoprefixer = require ('gulp-autoprefixer'),
+browserSync = require ('browser-sync').create();
 
-// Static server
+function serveSass() {
+  return src('src/sass/**/*.{scss,sass}')
+  .pipe(sass()) 
+  .pipe(autoprefixer({cascade: false}))
+  .pipe(dest('src/css'))
+  .pipe(browserSync.stream());
+}
+
 function bs() {
   serveSass();
   browserSync.init({
-      server: { 
-          baseDir: "src"
-      }
-  });
-  watch("src/*.html").on('change', browserSync.reload);
-  watch("src/sass/**/*.sass", serveSass);
-  watch("src/sass/**/*.scss", serveSass);
-  watch("./js/*.js").on('change', browserSync.reload);
-};
+    server: { 
+      baseDir: "src" 
+}
 
-// Compile sass into CSS & auto-inject into browsers
-function serveSass() {
-  return src("src/sass/**/*.sass", "src/scss/**/*.scss")
-      .pipe(sass())
-      .pipe(autoprefixer({
-        cascade: false
-    }))
-      .pipe(dest("./css"))
-      .pipe(browserSync.stream());
-};
+  });
+  watch ('src/*.html').on ('change', browserSync.reload);
+  watch ('src/sass/**/*.{scss,sass}', serveSass);
+  watch ('src/js/**/*.js').on('change', browserSync.reload);
+}
 
 exports.serve = bs;
