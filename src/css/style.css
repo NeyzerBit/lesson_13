@@ -441,6 +441,7 @@ body {
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: Yeseva One;
     color: #fff; }
     .hero__scroll-down::after {
       content: '';
