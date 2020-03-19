@@ -339,7 +339,7 @@ template {
 
 .container {
   width: 85%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto; }
 
 *, *:before, *:after {
@@ -382,14 +382,17 @@ body {
   color: #E3B873;
   text-transform: uppercase; }
 
-.nav__item {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-right: 40px;
-  transition: color 0.2s; }
-  .nav__item:hover {
-    color: #E3B873; }
+.nav {
+  display: flex;
+  margin-left: 23px; }
+  .nav__item {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 40px;
+    transition: color 0.2s; }
+    .nav__item:hover {
+      color: #E3B873; }
 
 .phone {
   color: #E3B873; }
