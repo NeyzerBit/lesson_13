@@ -1,88 +1,68 @@
-# lesson_13
-# Project Title
-
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вёрстка сайта</title> 
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="menu">
+          <div class="logo menu__logo">Repair Design Project</div>
+          <nav class="nav menu__nav">
+            <a href="#" class="nav__item">Главная</a>
+            <a href="#" class="nav__item">Проекты</a>
+            <a href="#" class="nav__item">Замер</a>
+            <a href="#" class="nav__item">Команда</a>
+            <a href="#" class="nav__item">Отзывы</a>
+            <a href="#" class="nav__item">Контакты</a>
+          </nav>
+          <div class="contacts menu__contacts">
+            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+            <button class="button contacts__button button--primary">Заказать звонок</button>
+          </div>
+        </div>
+        <!-- /.menu -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <main>
+      <section class="hero">
+        <div class="instagram hero__instagram"> 
+          <a href="#" class="instagram__link">Instagram</a>
+        </div>
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+            <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от
+              стоимости материалов за счет организации работы</p>
+            <button class="button hero__button button--primary">Рассчитать стоимость</button>
+            <button class="button hero__button button--outline">Отправить заявку</button>
+          </div>
+          <!-- /.hero__content -->
+        </div>
+          <!-- /.container -->
+        <a href="#" class="hero__scroll-down">листайте вниз</a>
+      </section>
+      <!-- /.hero -->
+      <section class="section control">
+        <div class="conteiner">
+          <div class="section-title">
+            <h2 class="section-title__heading">Онлайн контроль</h2>
+            <!-- /.section-title__heading -->
+            <div class="section-title__image">
+              <img src="img/video.svg" alt="video">
+            </div>
+            <!-- /.section-title__image -->
+          </div>
+          <!-- /.section-title -->
+        </div>
+        <!-- /.conteiner -->
+      </section>
+      <!-- /.section control -->
+    </main>
+  </body>
+</html>
