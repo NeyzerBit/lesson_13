@@ -339,8 +339,7 @@ template {
     color: #fff; }
 
 .label {
-  font-size: 1.07rem;
-  text-align: left; }
+  font-size: 1.07rem; }
   .label--light {
     color: rgba(255, 255, 255, 0.5); }
 
@@ -350,7 +349,8 @@ template {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
   color: #fff;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+  outline: none; }
   .input::-webkit-input-placeholder {
     color: #fff; }
   .input::-moz-placeholder {
@@ -616,8 +616,7 @@ img {
     visibility: visible; }
   .modal__dialog {
     position: relative;
-    max-width: 26.26rem;
-    text-align: center;
+    max-width: 36.36rem;
     background: #131313 url(../img/bg-lines.svg) no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
     color: #fff; }
