@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", function(event) { 
   // Присваиваем отклик для копки (заказать звонок)
   const modal = document.querySelector('.modal');
@@ -10,6 +11,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     element.addEventListener('click', switchModal);
   });
 
-  CloseBtn.addEventListener('click', switchModal);
+  CloseBtn.addEventListener('click', switchModal)
 
+});
+*/
+
+$(document).ready(function () {
+  var modal =$('.modal'),
+      modalBtn = $('[data-toggle=modal]'),
+      CloseBtn = $('.modal__close');
+  modalBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
+  CloseBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
 });
