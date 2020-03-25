@@ -389,7 +389,7 @@ template {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  margin-left: 30px; }
+  margin-left: 10px; }
 
 .col-30 {
   flex-basis: 30%; }
