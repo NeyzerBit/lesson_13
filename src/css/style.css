@@ -742,7 +742,11 @@ img {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .hero__scroll-down {
+    margin-bottom: -10px; }
+  .swiper__image {
+    width: 300px; } }
 
 @media screen and (max-width: 992px) {
   .nav {
