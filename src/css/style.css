@@ -638,8 +638,11 @@ img {
   bottin: 0.5rem;
   margin-left: 3px; }
 
-.types__section-title {
-  margin-bottom: 2rem; }
+.repair__row {
+  margin-top: 20px;
+  margin-left: -90px; }
+  .repair__row__section-title {
+    margin-bottom: 2rem; }
 
 .card__text {
   position: relative;
@@ -649,6 +652,10 @@ img {
   padding: 1.79rem 2.14rem;
   background-color: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__image {
+  max-width: none;
+  margin-left: 20px; }
 
 .card__title {
   font-family: 'Yeseva One', cursive;
