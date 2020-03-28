@@ -744,7 +744,9 @@ img {
   .nav__item {
     margin-right: 1rem; }
   .hero__scroll-down {
-    margin-bottom: -10px; } }
+    margin-bottom: -10px; }
+  .swiper-container {
+    width: 40.142rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -754,7 +756,11 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .col {
+    max-width: 32.142rem; }
+  .swiper-container {
+    width: 31rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -763,7 +769,11 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .swiper-container {
+    width: 26rem; }
+  .section-title {
+    margin-bottom: 4rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -782,8 +792,12 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .section-title {
+    padding-bottom: 5rem; } }
 
 @media screen and (max-heigt: 520px) {
   .hero__scroll-down {
-    display: none; } }
+    display: none; }
+  .swiper-container {
+    width: 20rem; } }

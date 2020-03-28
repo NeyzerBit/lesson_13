@@ -7,8 +7,9 @@
   .hero
     &__scroll-down
       margin-bottom: -10px
-  .swiper
-  
+  .swiper-container
+    width: 40.142rem
+
 @media screen and ( max-width: 992px )
   .nav
     display: none
@@ -19,7 +20,10 @@
       display: none
     &__content
       margin-left: 0
-    
+  .col
+      max-width: 32.142rem 
+  .swiper-container
+    width: 31rem
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -30,6 +34,10 @@
   .card
     &__text
       margin-left: 0
+  .swiper-container
+   width: 26rem
+  .section-title
+    margin-bottom: 4rem
 @media screen and ( max-width: 570px )
   .contacts
     &__phone
@@ -50,9 +58,13 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+  .section-title
+    padding-bottom: 5rem
 @media screen and ( max-heigt: 520px )
   .hero
     &__scroll-down
       display: none
+  .swiper-container
+    width: 20rem
 
   
